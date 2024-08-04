@@ -39,3 +39,56 @@ Para facilitar a autenticação com o GitHub e melhorar a segurança, é recomen
 ssh-keygen -t rsa -b 4096 -C "seu_email@gmai.com"
 ```
 3. Quando você fizer isso vai aparecer algumas opções, pode deixar tudo no default apertando enter ou modificar caso seja preciso.
+
+### Passo 2: Adicionar a Chave SSH ao Agente SSH
+
+1. Inicie o agente SSH no background:
+
+```bash
+eval "$(ssh-agent -s)"
+```
+
+2. Adicione sua chave SSh ao agente:
+```bash
+ssh-add ~/.ssh/id_rsa
+```
+**Nota:** *Substitua* `id_rsa` pelo nome do arquivo da sua chave, se você tiver escolhido um nome diferente.
+
+### Passo 3: Adicionar a Chave SSH ao GitHub
+
+1. Copie a chave pública para o clipboard:
+
+* macOS:
+```bash
+cat ~/.ssh/id_rsa.pub | pbcopy
+```
+
+* Linux:
+```bash
+cat ~/.ssh/id_rsa.pub | xclip
+```
+
+* Windows (Git Bash):
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+Copie manualmente a saída.
+
+2. No GitHub:
+
+* Vá para o GitHub.
+* Acesse as configurações da sua conta (Settings).
+* No menu à esquerda, selecione "SSH and GPG keys".
+* Clique em "New SSH key".
+* Cole sua chave pública no campo "Key" e dê um nome descritivo à chave no campo "Title".
+* Clique em "Add SSh key".
+
+### Passo 4: Verificar a Configuração
+
+Para verificar se a configuração foi bem-sucedida, você pode testar a conexão com o GitHub:
+
+```bash
+ssh -T git@github.com
+```
+
+Você deverá ver uma mensagem de sucesso informando que a conexão foi estabelecida.
