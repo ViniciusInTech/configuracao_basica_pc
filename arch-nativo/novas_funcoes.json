@@ -1,0 +1,54 @@
+{
+  "new_entity": {
+          "steps": [
+            {"walk_to_entity_layer": ["core"]},
+            {"create_folder": ["entities"]},
+            {"create_folder": ["/entities/factories"]},
+            {"create_folder": ["/entities/implementations"]},
+            {"create_file_based_in_template": ["/entities/","<pc>args[1]</pc>.java", "entity.txt",["args[1]"]]},
+            {"create_file_based_in_template": ["/entities/factories/","<pc>args[1]</pc>Factory.java", "entityFactory.txt",["args[1]"]]},
+            {"create_file_based_in_template": ["/entities/implementations/","<pc>args[1]</pc>Implementation.java", "entityImplementation.txt",["args[1]"]]},
+            {"return_root_path": "None"}
+          ]
+        },
+  "new_table": {
+          "steps": [
+            {"change_folder_partial_match": ["adapters", "target"]},
+            {"create_file_based_in_template": ["/dao/tables/","<pc>args[1]</pc>Table.java", "entityTable.txt",["args[1]"]]},
+            {"create_file_based_in_template": ["/dao/repositories/","<pc>args[1]</pc>TableRepository.java", "entityTableRepository.txt",["args[1]"]]},
+            {"create_file_based_in_template": ["/dao/repositories/implementations/","<pc>args[1]</pc>TableRepositoryImplementation.java", "entityTableRepositoryImplementation.txt",["args[1]"]]},
+            {"create_file_based_in_template": ["/dao/repositories/factories/","<pc>args[1]</pc>TableRepositoryFactory.java", "entityTableRepositoryFactory.txt",["args[1]"]]},
+            {"return_root_path": "None"}
+          ]
+        },
+  "walk_to_entity_layer": {
+          "steps": [
+            {"change_folder_partial_match": ["args[0]", "target"]},
+            {"change_folder_partial_match": ["entities", "target"]},
+            {"go_up": "None"}
+          ]
+        },
+  "desafio": {
+        "steps": [
+          {"create_folder": ["<sc>args[1]</sc>"]},
+          {"create_folder": ["<sc>args[1]</sc>/inputs"]},
+          {"create_folder": ["<sc>args[1]</sc>/outputs"]},
+
+          {"create_file":  ["<sc>args[1]</sc>/",
+              "<sc>args[1]</sc>.py",
+              ""]},
+
+          {"create_file":  ["<sc>args[1]</sc>/",
+              "<sc>args[1]</sc>_enunciado.txt",
+              ""]},
+
+          {"create_file":  ["<sc>args[1]</sc>/inputs/",
+              "input.txt",
+              ""]},
+
+          {"create_file":  ["<sc>args[1]</sc>/outputs/",
+              "output.txt",
+              ""]}
+        ]
+      }
+}

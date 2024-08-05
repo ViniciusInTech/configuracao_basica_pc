@@ -1,0 +1,10 @@
+package br.com.stockio.servicos.adapters.dao.repositories.implementations;
+
+import br.com.stockio.servicos.adapters.dao.repositories.<pc>args[0]</pc>TableRepository;
+import br.com.stockio.servicos.adapters.dao.repositories.commons.AbstractBasicCrudOperations;
+import br.com.stockio.servicos.adapters.dao.tables.<pc>args[0]</pc>Table;
+
+
+public class <pc>args[0]</pc>TableRepositoryImplementation extends AbstractBasicCrudOperations<<pc>args[0]</pc>Table> implements <pc>args[0]</pc>TableRepository {
+
+}

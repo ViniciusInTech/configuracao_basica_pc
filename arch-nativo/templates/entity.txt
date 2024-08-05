@@ -1,0 +1,14 @@
+package br.com.stockio.servicos.core.entities;
+
+import com.cae.entities.Entity;
+import lombok.*;
+
+
+@Getter
+@Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public abstract class <pc>args[0]</pc>  implements Entity {
+
+}

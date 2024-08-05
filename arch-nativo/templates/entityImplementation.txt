@@ -1,0 +1,8 @@
+package br.com.stockio.servicos.core.entities.implementations;
+
+import br.com.stockio.servicos.core.entities.<pc>args[0]</pc>;
+
+
+public class <pc>args[0]</pc>Implementation extends <pc>args[0]</pc> {
+
+}

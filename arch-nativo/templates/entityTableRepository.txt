@@ -1,0 +1,7 @@
+package br.com.stockio.servicos.adapters.dao.repositories;
+
+import br.com.stockio.servicos.adapters.dao.repositories.commons.BasicCrudOperations;
+import br.com.stockio.servicos.adapters.dao.tables.<pc>args[0]</pc>Table;
+
+public interface <pc>args[0]</pc>TableRepository extends BasicCrudOperations<<pc>args[0]</pc>Table, Long> {
+}

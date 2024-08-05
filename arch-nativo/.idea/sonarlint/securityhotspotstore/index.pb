@@ -1,0 +1,23 @@
+
+B
+novas_funcoes.json,6\d\6de3b82bfa8a4d81efeaec4d37f2527d75961d91
+8
+flow.bat,6\0\60f003e0d9cc7da971ff321245bd813bd9740dbb
+7
+main.py,f\1\f1bdda93d9a278e358509d498e17d97764c1fb29
+D
+templates/entity.txt,c\a\ca87b480d27087966bde56d17981a7bf26e20139
+K
+templates/entityFactory.txt,e\3\e3aeaf2a252dd1e28ec51351c487bfd958f6ef79
+R
+"templates/entityImplementation.txt,3\b\3bd144c8d602d51f2d9eafadf8266f93c6ff41f5
+I
+templates/entityTable.txt,f\7\f780e92d7f3e5b86674f66be2a0545de8293d1e0
+P
+ templates/implementation_cuc.txt,3\6\36d84abf8ef7fb132d4c5aca53f60a42511b9b5e
+S
+#templates/entityTableRepository.txt,1\f\1ffd5f9eac4d84a128e4e75702900ee92a65724c
+a
+1templates/entityTableRepositoryImplementation.txt,1\7\177e77bfccc8e829a2d8c40b9e57263efb2098ad
+Z
+*templates/entityTableRepositoryFactory.txt,a\5\a5708b9b0ec45fbc4b1a18c87bff7eeb550098f1

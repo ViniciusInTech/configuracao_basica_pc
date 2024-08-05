@@ -1,0 +1,23 @@
+package br.com.stockio.servicos.adapters.dao.tables;
+
+import br.com.stockio.servicos.adapters.dao.tables.commons.TableEntity;
+import br.com.stockio.servicos.core.entities.<pc>args[0]</pc>;
+
+
+public class <pc>args[0]</pc>Table extends TableEntity<<pc>args[0]</pc>, Long> {
+
+    public <pc>args[0]</pc>Table(){super(new <pc>args[0]</pc>());}
+
+    public <pc>args[0]</pc>Table(<pc>args[0]</pc> entity){super(entity);}
+
+    @Override
+    public Long getPrimaryKey() {
+        return this.getEntity().getId();
+    }
+
+    @Override
+    public void setPrimaryKey(Long primaryKeyValue) {
+        this.getEntity().setId(primaryKeyValue);
+    }
+
+}
